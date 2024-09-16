@@ -1,0 +1,544 @@
+
+.about{
+    width: 100%;
+    height: 400px;
+    background-image: url('photo/Content/backtound.jpg'); /* Путь к изображению */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* Стили для заголовка (header) */
+header {
+     background-color: #fa76fa; 
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.header-content {
+    margin: auto;
+    padding:50px;
+    max-width: 1200px;
+    
+   
+}
+
+.hed-div {
+    padding: 13px;
+    /* width: 100%; */
+    gap: 30px; /* Промежуток между кнопкой и текстом */
+    background-color: #ffcbff;
+    display: flex;
+    justify-content: center;
+    border-radius:60px ;
+}
+
+.div-hed-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.buy-button {
+    
+    background-color: #f31ff3;
+    color: #fff;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: xx-large;
+    display: flex;
+}
+
+
+
+.buy-button:hover {
+    background-color: #e73570;
+}
+
+.sa-text {
+    font-size: 30px;
+    color: black;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    flex: 1;  /* Текст "Pink Shark" занимает левую часть */
+    text-align: left;
+}
+
+.social-links {
+    
+    display: flex;
+    gap: 20px;
+    flex: 1;  /* Социальные ссылки по центру */
+    justify-content: center;
+}
+
+.social-link img{
+    max-width: 45px;
+}
+
+header p {
+    margin: 0;
+    font-size: 1em;
+    flex: 1;  /* Остальной текст занимает правую часть */
+    text-align: right;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    /* header .container {
+        flex-direction: column;
+        text-align: center;
+    } */
+
+    header h1, header p {
+        flex: none;
+        order: 1;
+        text-align: center;
+    }
+
+    .social-links {
+        order: 2;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .social-link img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .header-content {
+        order: 3;
+        
+        justify-content: center;
+    }
+}
+
+
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+} 
+
+.roadmap {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.roadmap h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.roadmap-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.roadmap-step {
+    background-color: #fafafa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.step-number {
+    background-color: #f31ff3;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.step-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.step-content p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .roadmap-step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .step-number {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+}
+
+
+
+
+
+/* Отступ для контента, чтобы он не перекрывался шапкой */
+body {
+    margin-top: 70px; /* Высота шапки + отступ */
+}
+
+/* === Общие стили === */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.about-bg {
+    background-color: #ffcbff;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+    border-radius:40px ;
+    
+}
+
+.con-text{
+    text-align: center;
+}
+
+/* === Стили для секции "About" === */
+.about {
+    padding: 80px 0 80px;
+    text-align: center;
+     background-color: #fff; 
+    /* background-image: url(/photo/ukphgjvesuodpnohbzsa23rdr7ry.png); */
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about .shark-image {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* === Стили для слайд-шоу === */
+.slideshow {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.mySlides img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot-container {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* === Стили для калькулятора прибыли === */
+.profit-calculator {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.profit-calculator h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profit-calculator .container {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.profit-calculator label {
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.profit-calculator input {
+    font-size: 1.1em;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.profit-calculator button {
+    font-size: 1.2em;
+    padding: 12px 25px;
+    background-color: #f31ff3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.profit-calculator button:hover {
+    background-color: #d31cd3;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: #2d3436;
+}
+
+/* === Стили для круговой диаграммы === */
+.chart {
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+
+.chart .container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.chart h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+}
+
+/* === Адаптивные стили === */
+
+/* @media (min-width: 1300px) {
+    .hed-div {
+        
+        display: flex;
+        justify-content: center;
+    }
+    .header-content {
+        padding-left: 70px;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    } 
+} */
+
+@media (max-width : 1000px) {
+    .sa-text{
+        font-size: 23px;
+    }
+}
+
+@media (max-width : 780px) {
+    .sa-text{
+        font-size: 18px;
+    }
+    .buy-button{
+        padding:6px 25px ;
+    }
+    .div-heder{
+        padding-left:5px ;
+    }
+}
+@media (max-width : 656px) {
+    .sa-text{
+        font-size: 13px;
+    }
+    .buy-button{
+        padding:5px 20px ;
+    }
+    .div-heder{
+        padding-left:5px ;
+    }
+}
+
+@media (max-width: 460px){
+    .hed-div{
+        
+        gap: 5px;
+    }
+}
+
+@media (max-width: 430px){
+    .hed-div{
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about h2,
+    .profit-calculator h2,
+    .chart h2 {
+        font-size: 1.5em;
+    }
+
+    .about .shark-image {
+        width: 150px;
+    }
+
+    .profit-calculator .container,
+    .chart .container {
+        width: 85%;
+    }
+
+    .chart-container {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    /* header .container {
+      
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } */
+
+    .social-links {
+        margin-bottom: 10px;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .site-info {
+        text-align: center;
+    }
+
+    body {
+        margin-top: 120px;
+    }
+}

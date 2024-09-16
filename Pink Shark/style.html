@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- https://img.freepik.com/premium-photo/cartoon-pink-shark-with-big-teeth-sharp-teeth-generative-ai_958108-44682.jpg
+ https://cdn.custom-cursor.com/packs/6510/cute-pink-shark-pack.png
+ https://attic.sh/ukphgjvesuodpnohbzsa23rdr7ry
+  -->
+<html lang="en">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pink Shark Token</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="shark-icon.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                
+                <h1>Pink Shark Token</h1>
+                <div class="social-links">
+                    <a target="_blank" href="https://www.instagram.com/pink_shark_trx/" class="social-link"><img src="photo/social/instagram.png" alt="Instagram" ></a>
+                    <a target="_blank" href="" class="social-link"><img src="photo/social/telegram.png" alt="Telegram" ></a>
+                    <a target="_blank" href="https://x.com/PinkSharkTRX" class="social-link"><img src="photo/social/x.png" alt="Twitter" ></a>
+                    <!-- <a href="https://dextools.io" class="social-link"><img src="dextools-icon.png" alt="DEXTools"></a> -->
+                </div>
+                <p>The Next Big Thing in Crypto</p>
+            </div>
+        </header>
+        
+        
+        
+        
+    
+        <section class="about">
+            <div class="container about-bg">
+                <h2>About Pink Shark</h2>
+                <p>Pink Shark is a revolutionary crypto token designed to dominate the decentralized finance world. Join us on our journey to the moon!</p>
+                
+            </div>
+            <div class="header-content">
+                <div class="hed-div">
+                    <div class="div-heder"> <a target="_blank" href="https://dexscreener.com" class="buy-button">BUY</a></div>
+                    <div class="div-hed-p"> <a class="sa-text">CA: is updating...</a></div>
+                </div>
+               
+               
+                
+            </div>
+        </section>
+    
+        <section class="roadmap">
+            <h1>Token Roadmap</h1>
+            <div class="roadmap-container">
+                <div class="roadmap-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h2>Step 1</h2>
+                        <p>Reach $80,000 Market Cap and 100 Holders. Listing on SunSwap.</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h2>Step 2</h2>
+                        <p>Reach $500,000 Market Cap and 1,000 Holders. Burn 5% of Tokens.</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h2>Step 3</h2>
+                        <p>Reach $1,000,000 Market Cap and 10,000 Holders. Airdrop 5% of Tokens .</p>
+                    </div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h2>Step 4</h2>
+                        <p>Reach $10,000,000 Market Cap and 30,000 Holders. Listing on Gate.io , Huobi , BitGet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="hed-div">
+                    <div  class="div-heder"> <a target="_blank" href="https://dexscreener.com" class="buy-button">BUY</a></div>
+                    <div class="div-hed-p"> <a class="sa-text">CA: is updating...</a></div>
+                </div>
+        </section>
+    
+        <section class="profit-calculator">
+            <div class="container">
+                <h2>Profit Calculator</h2>
+                <form id="profitCalculatorForm">
+                    <label for="buyMarketCap">Market Cap at Purchase ($):</label>
+                    <input type="number" id="buyMarketCap" name="buyMarketCap" placeholder="Enter purchase market cap" required>
+        
+                    <label for="sellMarketCap">Market Cap at Sale ($):</label>
+                    <input type="number" id="sellMarketCap" name="sellMarketCap" placeholder="Enter sale market cap" required>
+        
+                    <button type="button" onclick="calculateProfit()">Calculate Profit</button>
+                </form>
+                <div id="profitResult" class="result"></div>
+            </div>
+        </section>
+        
+    
+        <section class="chart">
+            <div class="container">
+                <h2>Token Distribution</h2>
+                <div class="chart-container">
+                    <canvas id="distributionChart"></canvas>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+                <p class="con-text">&copy; 2024 Pink Shark Token. All Rights Reserved.</p>
+            </div>
+        </footer>
+    
+        <script>
+            // Рисуем круговую диаграмму
+            const ctx = document.getElementById('distributionChart').getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['DEV (3%)','Burn(5%)','AirDrop(7%)', 'Community (85%)'],
+                    datasets: [{
+                        data: [3,5,7,85],
+                        backgroundColor: ['#a29bfe', '#74b9ff','Yellow','#57cc99'], // Мягкие цвета: светло-фиолетовый и светло-голубой
+                        borderWidth: 1,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    legend: {
+                        position: 'bottom',
+                    },
+                    cutoutPercentage: 50,
+                }
+            });
+    
+            // Логика для слайд-шоу
+            let slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                let i;
+                const slides = document.getElementsByClassName("mySlides");
+                const dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+    
+            // Логика для калькулятора прибыли
+            function calculateProfit() {
+    const buyMarketCap = parseFloat(document.getElementById('buyMarketCap').value);
+    const sellMarketCap = parseFloat(document.getElementById('sellMarketCap').value);
+
+    if (isNaN(buyMarketCap) || isNaN(sellMarketCap) || buyMarketCap <= 0 || sellMarketCap <= 0) {
+        document.getElementById('profitResult').innerText = "Please enter valid market capitalizations.";
+        return;
+    }
+
+    const profitPercentage = ((sellMarketCap - buyMarketCap) / buyMarketCap) * 100;
+
+    if (profitPercentage < 0) {
+        document.getElementById('profitResult').innerHTML = `Your loss is ${profitPercentage.toFixed(2)}%.<br>Just hold!`;
+    } else {
+        document.getElementById('profitResult').innerHTML = `Your profit is ${profitPercentage.toFixed(2)}%.<br>That's how much you can make by buying Pink Shark now!`;
+    }
+}
+
+        </script>
+    </body>
+    </html>
