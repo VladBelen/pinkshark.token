@@ -1,1 +1,1 @@
-# pinkshark.token
+# pinkshark.io
